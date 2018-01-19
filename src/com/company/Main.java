@@ -13,8 +13,9 @@ public class Main extends JFrame{
         setTitle("Simon Says");
         setResizable(false);
         setSize(1280, 720);
-        setVisible(true);
-        add(new gameFrame());
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        add(new gameFrame());
+        setVisible(true);
+
     }
 }

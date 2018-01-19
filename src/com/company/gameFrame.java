@@ -2,12 +2,8 @@ package com.company;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
-import java.util.concurrent.TimeUnit;
 import javax.swing.Timer;
 
 public class gameFrame extends JPanel {
@@ -36,8 +32,7 @@ public class gameFrame extends JPanel {
             update();
         });
         time.start();
-        addToArray();
-        checkArray();
+//        checkArray();
     }
 
     public void paintComponent(Graphics g) {
@@ -75,12 +70,14 @@ public class gameFrame extends JPanel {
             }
         }
         frame++;
-//        System.out.println(frame);
+        System.out.println(frame);
+//        addToArray();a
         repaint();
     }
 
     public void addToArray() {
         isLit.add(ThreadLocalRandom.current().nextInt(1, 5));
+        System.out.println(isLit.toString());
     }
 
     public void checkArray() {
