@@ -127,7 +127,7 @@ public class gameFrame extends JPanel {
             isRedLit = false;
             isYellowLit = false;
             isBlueLit = false;
-
+// yooooooooooooooooooooooooooooo
         }
         addToArray();
     }
